@@ -3,50 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Sample HTML Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Embedded Canva Design</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .embed-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 56.2225%;
+            box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Sample Page 2</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is a sample homepage to showcase HTML structure.</p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>This section provides information about the sample page.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you have any questions, feel free to reach out!</p>
-        </section>
-
-        <section id="embed">
-            <h2>Embedded Design</h2>
-            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-                    src="https://www.canva.com/design/DAGRbyCxISM/R9vahDfnogdmULnhYYe9oA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-                </iframe>
-            </div>
-            <a href="https://www.canva.com/design/DAGRbyCxISM/R9vahDfnogdmULnhYYe9oA/view?utm_content=DAGRbyCxISM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Pink Floral Wedding Invitation</a> by aziz support
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 My Sample Page. All rights reserved.</p>
-    </footer>
+    <div class="embed-container">
+        <iframe loading="lazy" 
+            src="https://www.canva.com/design/DAGRbyCxISM/R9vahDfnogdmULnhYYe9oA/view?embed" 
+            allowfullscreen="allowfullscreen" 
+            allow="fullscreen">
+        </iframe>
+    </div>
+    <a href="https://www.canva.com/design/DAGRbyCxISM/R9vahDfnogdmULnhYYe9oA/view?utm_content=DAGRbyCxISM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener" style="display: none;">Pink Floral Wedding Invitation</a>
 </body>
 </html>
